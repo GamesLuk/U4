@@ -1,23 +1,20 @@
 package h2;
 
+import java.util.List;
 import java.util.random.RandomGenerator;
 
 public class H2_main {
 
     public static void main(String[] args) {
 
-    	int jahr = 2025;
-		boolean schalt;
+        boolean x = RandomGenerator.getDefault().nextBoolean();
+        boolean y = RandomGenerator.getDefault().nextBoolean();
+        boolean a = RandomGenerator.getDefault().nextBoolean();
+        boolean b = RandomGenerator.getDefault().nextBoolean();
+        boolean c = RandomGenerator.getDefault().nextBoolean();
 
-		//jahr = RandomGenerator.getDefault().nextInt(1900,3000);
-		
-		if(jahr % 400 == 0) schalt = true;
-		else if (jahr % 100 == 0) schalt = false;
-		else if (jahr % 4 == 0) schalt = true;
-		else schalt = false;
+        int input =
 
-		System.out.println("Jahr: " + jahr + ", Schalt: " + schalt);
-        
     }
 
 }
