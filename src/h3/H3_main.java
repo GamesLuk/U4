@@ -11,11 +11,10 @@ public class H3_main {
 		int wartend;
 		boolean istVoll;
 
-        /*
         max = RandomGenerator.getDefault().nextInt(5,21);
         fix = RandomGenerator.getDefault().nextInt(0, max);
         wartend = RandomGenerator.getDefault().nextInt(0, 25);
-        */
+
 
         System.out.println("Max Gäste: " + max + " ,fixe Gäste: " + fix + " ,Wartend: " + wartend);
 
