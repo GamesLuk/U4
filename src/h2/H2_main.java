@@ -6,12 +6,7 @@ public class H2_main {
 
     public static void main(String[] args) {
 
-        boolean x = RandomGenerator.getDefault().nextBoolean();
-        boolean y = RandomGenerator.getDefault().nextBoolean();
-        boolean a = RandomGenerator.getDefault().nextBoolean();
-        boolean b = RandomGenerator.getDefault().nextBoolean();
-        boolean c = RandomGenerator.getDefault().nextBoolean();
-
+        boolean x,y,a,b,c;
         int input = 10;
 
         System.out.println("Input: " + input);
