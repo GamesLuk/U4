@@ -6,28 +6,15 @@ public class H3_main {
 
     public static void main(String[] args) {
 
-    	int max;
-		int fix;
-		int wartend;
-		boolean istVoll;
+        float celsiusFloat = RandomGenerator.getDefault().nextInt(-20, 40);
+        double celsiusDouble = RandomGenerator.getDefault().nextInt(-20, 40);
 
-        max = RandomGenerator.getDefault().nextInt(5,21);
-        fix = RandomGenerator.getDefault().nextInt(0, max);
-        wartend = RandomGenerator.getDefault().nextInt(0, 25);
+        float fahrenheitFloat = (celsiusFloat * 9/5) + 32;
+        double fahrenheitDouble = (celsiusDouble * 9/5) + 32;
 
+        System.out.println("Celsius (float): " + celsiusFloat + "°C -> Fahrenheit (float): " + fahrenheitFloat + "°F");
+        System.out.println("Celsius (double): " + celsiusDouble + "°C -> Fahrenheit (double): " + fahrenheitDouble + "°F");
 
-        System.out.println("Max Gäste: " + max + " ,fixe Gäste: " + fix + " ,Wartend: " + wartend);
-
-		while (wartend > 0 && fix < max) {
-			wartend -= 1;
-			fix += 1;
-		}
-
-		istVoll = fix == max;
-
-        System.out.println("Max Gäste: " + max + " ,fixe Gäste: " + fix + " ,Wartend: " + wartend);
-        System.out.println("Ist voll: " + istVoll);
-		
     }
 
 }
