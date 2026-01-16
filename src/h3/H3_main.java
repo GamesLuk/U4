@@ -7,7 +7,7 @@ public class H3_main {
     public static void main(String[] args) {
 
         float celsiusFloat = RandomGenerator.getDefault().nextInt(-20, 40);
-        double celsiusDouble = RandomGenerator.getDefault().nextInt(-20, 40);
+        double celsiusDouble = celsiusFloat;
 
         float fahrenheitFloat = (celsiusFloat * 9/5) + 32;
         double fahrenheitDouble = (celsiusDouble * 9/5) + 32;
